@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">travel</h2>
+
+            <div class="toggle"><i class="fa fa-bars"></i>
+            </div>
+        </header>
+        <!--<video src="inspiration.mp4" muted loop autoplay></video><!-->
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Exploring The World</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus suscipit consequatur quam iusto odio fugit quisquam nulla autem ex inventore?</p>
+            <a href="#">Explore</a>
+
+        </div>
+        <ul class="social">
+            <li><a href="#"><img src="facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="instagram.png" alt=""></a></li>
+
+        </ul>
+    </section>
+    
+    <div class="menu">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li ><a href="#">About</a></li>
+    </ul>
+</div>
+<script>
+    const menuToggle= docment.queryselector('.toggle')
+    const showcase= docment.queryselector('.showcase')
+
+    menuToggle.addEventlistener('click', function(){
+        menuToggle.classlist.toggle('active')
+        showcase.classlist.toggle('active')
+    })
+
+</script>
+</body>
+</html>
